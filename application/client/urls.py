@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register('contact-us', ContactUsView)
 router.register('testimonial', TestimonialView)
 router.register('appointment', AppointmentView)
-
+#check on git change
 urlpatterns = [
     path('', include(router.urls))
 ]
