@@ -4,9 +4,9 @@ from django.db import models
 
 class ServiceAddress(models.Model):
     address_choices = (
-        ('ho', 'Head Office'),
-        ('ca', 'Chamber Addres'),
-        ('oa', 'Other Offices'),
+        ('Head Office', 'Head Office'),
+        ('Chamber Addres', 'Chamber Addres'),
+        ('Other Offices', 'Other Offices'),
     )
     street_address = models.CharField(max_length=20, null=True)
     city = models.CharField(max_length=30, null=False)

@@ -17,3 +17,4 @@ class EventAdmin(admin.ModelAdmin):
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('title', 'writer')
+    readonly_fields = ['preview']

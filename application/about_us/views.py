@@ -10,6 +10,6 @@ from .serializer import ServiceAddressSerializer
 
 # Create your views here.
 class ServiceAddressView(GenericViewSet, ListModelMixin):
-    queryset = ServiceAddress.objects.all().order_by('address_choices')
+    queryset = ServiceAddress.objects.all().order_by('pincode')
     serializer_class = ServiceAddressSerializer
     pagination_class = StandardResultsSetPagination
